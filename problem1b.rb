@@ -11,4 +11,5 @@ def count_words(string)
 		end	
 		
 	return allWordsWithCounts.sort_by { |word, count| count } 
+		.reverse
 end
