@@ -1,19 +1,10 @@
-def palindrom(string)
+def palindrom?(string)
 
 	include Enumerable
 
-	result = string.lines.map { |s| s.gsub(/\W/,'').reverse }
-	#map { |s|	s.reverse }.
-	#	map { |s| s.downcase }
-		
-	#.     |s| s =~ /\w/
-	#	map { |s| s.downcase }
-		#downcase ==
-		#string.select { |s| s =~ \w}.
-		#downcase.
-		#reverse
+	result = string.lines.map { |s| s.gsub(/\W/,'').reverse.downcase }
+		== string.lines.map { |s| s.gsub(/\W/,'').downcase }
 
-		
 end
 
 
