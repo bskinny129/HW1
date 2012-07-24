@@ -3,7 +3,7 @@ def palindrom(string)
 	include Enumerable
 
 	result = string.lines.map { |s|	s.reverse }.
-		downcase
+		map { |s| s.downcase }
 	#.     |s| s =~ /\w/
 	#	map { |s| s.downcase }
 		#downcase ==
