@@ -2,8 +2,9 @@ def palindrom(string)
 
 	include Enumerable
 
-	result = string.lines.map { |s| s.reverse }
-	#.
+	result = string.lines.map { |s|	s.reverse }.
+		downcase
+	#.     |s| s =~ /\w/
 	#	map { |s| s.downcase }
 		#downcase ==
 		#string.select { |s| s =~ \w}.
