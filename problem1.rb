@@ -1,7 +1,7 @@
-def palindrom?(string)
+def palindrom(string)
 
-	result = string.select { |s| s =~ /\w/i}
-	#.
+	result = string.select { |s| s =~ /\w/}.
+		map { |s| s.downcase }
 		#downcase ==
 		#string.select { |s| s =~ \w}.
 		#downcase.
