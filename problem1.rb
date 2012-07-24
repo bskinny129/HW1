@@ -1,5 +1,7 @@
 def palindrom(string)
 
+	include Enumerable
+
 	result = string.select { |s| s =~ /\w/}.
 		map { |s| s.downcase }
 		#downcase ==
