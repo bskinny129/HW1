@@ -10,5 +10,5 @@ def count_words(string)
 			allWordsWithCounts[word] = allWordsWithDups.count(word)
 		end	
 		
-	put allWordsWithCounts
+	puts allWordsWithCounts
 end
