@@ -6,6 +6,7 @@ def palindrom?(string)
 		downcase.
 		reverse
 
+		
 end
 
 
