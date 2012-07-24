@@ -8,5 +8,7 @@ def count_words(string)
 	string.lines.map { |s| s.downcase.split(/\W+/) }[0].uniq.
 		each do |word|
 			allWordsWithCounts[word] = allWordsWithDups.count(word)
-			
+		end	
+		
+	put allWordsWithCounts
 end
