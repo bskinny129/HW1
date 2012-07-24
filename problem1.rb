@@ -2,9 +2,10 @@ def palindrom?(string)
 
 	result = string.select(\w).
 		downcase ==
-		string.select(\w).
-		downcase.
-		reverse
+		string.select { |s| s = ~ \w)
+		#.
+		#downcase.
+		#reverse
 
 		
 end
