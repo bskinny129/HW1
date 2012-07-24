@@ -10,5 +10,5 @@ def count_words(string)
 			allWordsWithCounts[word] = allWordsWithDups.count(word)
 		end	
 		
-	puts allWordsWithCounts
+	return allWordsWithCounts.sort_by { |word, count| count } 
 end
