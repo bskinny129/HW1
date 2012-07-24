@@ -2,6 +2,9 @@ def count_words(string)
 
 	include Enumerable
 	
-	string.lines.map { |s| s.downcase.split(/\W+/) }
-
+	allWordsWithDups = string.lines.map { |s| s.downcase.split(/\W+/) }[0]
+	
+	string.lines.map { |s| s.downcase.split(/\W+/) }[0].uniq
+	
+	
 end
