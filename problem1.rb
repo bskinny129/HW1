@@ -2,8 +2,10 @@ def palindrom?(string)
 
 	include Enumerable
 
-	string.lines.map { |s| s.gsub(/\W/,'').reverse.downcase } == 
-		string.lines.map { |s| s.gsub(/\W/,'').downcase }
+	string.lines.map { |s| s.gsub(/\W/,'').reverse.downcase } 
+	
+	#== 
+	#	string.lines.map { |s| s.gsub(/\W/,'').downcase }
 
 end
 
