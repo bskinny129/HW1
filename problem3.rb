@@ -12,6 +12,7 @@ def combine_anagrams(words)
 		result.push(sortedHash.select {|k,v| v == sorted}.each_key.to_a)
 		
 		puts sortedHash.select {|k,v| v == sorted}.each_key.entries
+		puts sortedHash.key(sorted)
 	end
 	puts "RESULT"
 	puts result
