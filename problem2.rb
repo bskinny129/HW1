@@ -4,10 +4,12 @@ include Enumerable
 
 class String 
 	def <=>(str)
+		put self.class.to_s
+		put str.class.to_s
 	
-		if self == str
+		#if self == str
 			return 0 
-		end
+		#end
 		#if self == "s" && str == "p"
 		#	return 1
 		#end
