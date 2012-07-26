@@ -9,7 +9,7 @@ class String
 			return 0 
 		end
 		if self == "s" and str == "p"
-			return 1
+			return -1
 		end
 		#if self > str
 		#	return -1
