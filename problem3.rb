@@ -3,7 +3,8 @@
 def combine_anagrams(words)
 
 
-	words.each { |word| puts word.sort }
-
+	words.map { |word| word.sort }
+#		puts word.downcase.map { |c| c.
+#	end
 
 end
