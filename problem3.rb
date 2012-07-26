@@ -13,7 +13,7 @@ def combine_anagrams(words)
 	
 	result = Array.new
 	sortedHash.each_value.to_a.uniq.each do |sorted|
-		result.push(sortedHash.select {|k,v| v = sorted}.each_key.to_a)
+		result.push(sortedHash.select {|k,v| v == sorted}.each_key.to_a)
 	end
 	puts "result"
 	puts result
