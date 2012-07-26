@@ -16,7 +16,7 @@ def combine_anagrams(words)
 		puts sortedHash.select {|k,v| v == sorted}.keys
 	end
 	puts "RESULT"
-	puts result
+	return result
 	#allUniques.each do |uniq|
 	#	words.select { |word| word.each_char.to_a.sort.join  }
 	#end
