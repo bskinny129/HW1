@@ -2,14 +2,16 @@
 
 def combine_anagrams(words)
 
-	
 	sortedHash = Hash.new
 	words.map do |word| 
 		sortedHash[word] = word.downcase.each_char.to_a.sort.join
 	end
-	puts sortedHash
+	sortedHash.invert
+	
+	sortedHash.each_value.uniq
+	#sortedHash.select {|k,v| v = }
 	#allUniques.each do |uniq|
-		words.select { |word| word.each_char.to_a.sort.join  }
+	#	words.select { |word| word.each_char.to_a.sort.join  }
 	#end
 	
 #	=~ /^#{uniq}$/i
