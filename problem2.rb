@@ -10,8 +10,17 @@ class String
 		end
 		if self == "s" and str == "p"
 			return -1
+		else
+			return 1
 		end
-		if self > str
+		
+		if self == "p" and str == "r"
+			return -1
+		else
+			return 1
+		end
+		
+		if self == "r" and str == "p"
 			return -1
 		else
 			return 1
