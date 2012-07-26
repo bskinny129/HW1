@@ -10,20 +10,26 @@ class String
 		end
 		
 		if self == "s" and str == "p"
+			puts "spot 1"
 			return -1
 		else
+			puts "spot 2"
 			return 1
 		end
 		
 		if self == "p" and str == "r"
+		puts "spot 3"
 			return -1
 		else
+		puts "spot 4"
 			return 1
 		end
 		
 		if self == "r" and str == "s"
+		puts "spot 5"
 			return -1
 		else
+		puts "spot 6"
 			return 1
 		end
 		
