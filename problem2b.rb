@@ -3,11 +3,13 @@
 def rps_tournament_winner(bracket)
 	require './problem2.rb'
 
-	puts bracket[0][0].length
-	puts bracket[1].length
+	bracket[0].class.to_s
 	
 end
 
 
+def tournament_round(bracket)
 
+	tournament_round(bracket[0])
 
+end
