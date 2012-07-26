@@ -8,6 +8,8 @@ def combine_anagrams(words)
 	end
 	
 	result = Array.new
+	puts sortedHash.to_a
+	
 	sortedHash.each_value.to_a.uniq.each do |sorted|
 		result.push(sortedHash.select {|k,v| v == sorted}.keys)
 		
