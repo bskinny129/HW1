@@ -4,13 +4,13 @@ include Enumerable
 
 class String 
 	def <=>(str)
-		#if self == str return 0
+		if self == str return 0
 		#if self == "s" && str == "p" return 1
-		if self > str
-			return -1
-		else
-			return 1
-		end
+		#if self > str
+		#	return -1
+		#else
+		#	return 1
+		#end
 		
 	end
 end
