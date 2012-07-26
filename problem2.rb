@@ -6,6 +6,7 @@ def rps_game_winner(game)
 raise WrongNumberOfPlayersError unless game.length == 2
 # your code here
 
-	game.select { |player| player[1] =~ /^(r|p|s)$/i }
+	raise NoSuchStrategyError unless game.select { |player| player[1] =~ /^(r|p|s)$/i }.
+		length == 2
 
 end
