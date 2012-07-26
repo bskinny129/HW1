@@ -20,7 +20,7 @@ class String
 			return 1
 		end
 		
-		if self == "r" and str == "p"
+		if self == "r" and str == "s"
 			return -1
 		else
 			return 1
