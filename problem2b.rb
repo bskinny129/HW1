@@ -5,5 +5,7 @@ def rps_tournament_winner(bracket)
 
 	numGames = bracket.length
 	
-
+	for i in 0..numGames-1
+		puts "hello dude"
+	end
 end
