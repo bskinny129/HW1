@@ -11,11 +11,11 @@ class String
 		if self == "s" && str == "p"
 			return 1
 		end
-		if self > str
-			return -1
-		else
-			return 1
-		end
+		#if self > str
+		#	return -1
+		#else
+		#	return 1
+		#end
 		
 	end
 end
