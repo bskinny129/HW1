@@ -4,8 +4,8 @@ include Enumerable
 
 class String 
 	def <=>(str)
-		put self.class.to_s
-		put str.class.to_s
+		puts self.class.to_s
+		puts str.class.to_s
 	
 		#if self == str
 			return 0 
