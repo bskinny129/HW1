@@ -8,7 +8,7 @@ def combine_anagrams(words)
 	end
 	sortedHash.invert
 	
-	sortedHash.each_value.uniq
+	sortedHash.each_value
 	#sortedHash.select {|k,v| v = }
 	#allUniques.each do |uniq|
 	#	words.select { |word| word.each_char.to_a.sort.join  }
