@@ -6,11 +6,9 @@ def combine_anagrams(words)
 		uniq
 
 	allUniques.each do |uniq|
-		words.select { |word| word.each_char.to_a.sort.join =~ /^#{uniq}$/i }
+		words.select { |word| puts word.each_char.to_a.sort.join  }
 	end
 	
-#	words.map { |word| puts word.lines.sort }
-#		puts word.downcase.map { |c| c.
-#	end
+#	=~ /^#{uniq}$/i
 
 end
