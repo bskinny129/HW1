@@ -8,6 +8,7 @@ class String
 		if self == str
 			return 0 
 		end
+		
 		if self == "s" and str == "p"
 			return -1
 		else
