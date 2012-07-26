@@ -6,7 +6,7 @@ def combine_anagrams(words)
 	words.map do |word| 
 		sortedHash[word] = word.downcase.each_char.to_a.sort.join
 	end
-	sortedHash.invert
+	#sortedHash.invert
 	
 	sortedHash.each_value.to_a.uniq.each do |sorted|
 		puts sortedHash.select {|k,v| v = sorted}
