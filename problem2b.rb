@@ -3,9 +3,11 @@
 def rps_tournament_winner(bracket)
 	require './problem2.rb'
 
-	numGames = bracket.length
+	puts bracket[0].length
+	puts bracket[1].length
 	
-	for i in 0..numGames-1
-		puts "hello dude"
-	end
 end
+
+
+
+
