@@ -1,7 +1,7 @@
 class Numeric
 	@@currencies = {'yen' => 0.013, 'euro' => 1.292, 'rupee' => 0.019}
 	
-	def dollars; self; end
+	def dollar; self; end
 #	def euros; self * @@currencies['euro']; end
 #	def rupees; self * @@currencies['rupee']; end
 #	def yens; self * @@currencies['yen']; end
