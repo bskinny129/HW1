@@ -16,7 +16,7 @@ class Numeric
 		puts "singular " + singular_currency
 		if @@currencies.has_key?(singular_currency)
 			self * @@currencies[singular_currency]
-		elsif singular_currency == dollar
+		elsif singular_currency == "dollar"
 			self
 		else
 			super
