@@ -2,9 +2,8 @@
 class String
 	
 	def palindrome?
-		include Enumerable
-		string.lines.map { |s| s.gsub(/\W/,'').reverse.downcase } == 
-		string.lines.map { |s| s.gsub(/\W/,'').downcase }
+		self.lines.map { |s| s.gsub(/\W/,'').reverse.downcase } == 
+		self.lines.map { |s| s.gsub(/\W/,'').downcase }
 	end
 	
 end
