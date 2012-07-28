@@ -4,12 +4,18 @@ class Class
 	
 		class_eval("
 			def #{attr_name}
-				@history
+				@#{attr_name}
 			end
 			
-			def #{attr_name}=(new_attr_name)
-				@history ||= Array.new
-				@history.push(new_attr_name)
+			def #{attr_name}_history
+				@#{attr_name}_history
+			end
+			
+			def #{attr_name}=(new_attr_value)
+				@#{attr_name}_history ||= Array.new
+				@#{attr_name}_history.push(new_attr_value)
+				
+				@#{attr_name} = new_attr_value
 			end
 		")	
 	
