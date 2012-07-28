@@ -9,7 +9,7 @@ class Class
 
 			
 			def #{attr_name}=(new_attr_value)
-				@#{attr_name}_history ||= Array.new(nil)
+				@#{attr_name}_history ||= Array.new().push(nil)
 				@#{attr_name}_history.push(new_attr_value)
 				
 				@#{attr_name} = new_attr_value
