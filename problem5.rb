@@ -6,13 +6,7 @@ class Class
 		attr_reader attr_name+"_history"
 		
 		class_eval("
-			def #{attr_name}
-				@#{attr_name}
-			end
-			
-			def #{attr_name}_history
-				@#{attr_name}_history
-			end
+
 			
 			def #{attr_name}=(new_attr_value)
 				@#{attr_name}_history ||= Array.new(nil)
