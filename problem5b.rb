@@ -8,10 +8,8 @@ class String
 	
 end
 
-module Enumerable
-	def palindrome?(string)
+def palindrome?(string)
 
-		string.lines.map { |s| s.gsub(/\W/,'').reverse.downcase } == 
-		string.lines.map { |s| s.gsub(/\W/,'').downcase }
-	end
+	string.lines.map { |s| s.gsub(/\W/,'').reverse.downcase } == 
+	string.lines.map { |s| s.gsub(/\W/,'').downcase }
 end
