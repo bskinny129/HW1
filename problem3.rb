@@ -3,7 +3,7 @@
 def combine_anagrams(words)
 
 	sortedHash = Hash.new
-	words.uniq.map do |word| 
+	words.map do |word| 
 		sortedHash[word] = word.downcase.each_char.to_a.sort.join
 	end
 	
