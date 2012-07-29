@@ -13,7 +13,9 @@ class CartesianProduct
 	end
 	
 	def each
-		@product.each
+		@product.each do |elt|
+			yield elt
+		end
 	end
 
 end	
