@@ -2,14 +2,18 @@ class CartesianProduct
 	include Enumerable
 
 	def initialize(first, second)
-		product = Array.new
+		@product = Array.new
 		first.each do |first_element|
 			second.each do |second_element|
 				product.push(Array[first_element, second_element])
 			end
 		end
-		product.collect
-		puts product.collect
+		@product.collect
+		puts @product.collect
+	end
+	
+	def each
+		@product.each
 	end
 
 end	
