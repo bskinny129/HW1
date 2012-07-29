@@ -4,7 +4,7 @@ class CartesianProduct
 	def initialize(first, second)
 		first.each do |first_element|
 			second.each do |second_element|
-				puts [first_element, second_element]
+				puts Array[first_element, second_element]
 			end
 		end
 	
