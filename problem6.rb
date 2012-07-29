@@ -9,6 +9,7 @@ class CartesianProduct
 			end
 		end
 		product.collect
+		puts product.collect
 	end
 
 end	
