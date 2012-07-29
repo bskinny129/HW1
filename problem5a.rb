@@ -8,7 +8,7 @@ class Numeric
 	def in(currency)
 		singular_currency = currency.to_s.gsub( /s$/, '')
 		if @@currencies.has_key?(singular_currency)
-			self * @@currencies[singular_currency]
+			self / @@currencies[singular_currency]
 		else
 			raise NoSuchCurrencyError
 		end
@@ -19,7 +19,7 @@ class Numeric
 		singular_currency = method_id.to_s.gsub( /s$/, '')
 
 		if @@currencies.has_key?(singular_currency)
-			self / @@currencies[singular_currency]
+			self * @@currencies[singular_currency]
 		elsif singular_currency == "dollar"
 			self
 		else
