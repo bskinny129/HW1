@@ -17,7 +17,11 @@ end
 
 module Enumerable
 	def palindrome?
-		self == self.reverse
+		if self.class.name == "Hash"
+			false
+		else
+			self == self.reverse
+		end
 	end
 
 end
