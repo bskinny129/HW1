@@ -13,3 +13,13 @@ def palindrome?(string)
 	string.lines.map { |s| s.gsub(/\W/,'').reverse.downcase } == 
 	string.lines.map { |s| s.gsub(/\W/,'').downcase }
 end
+
+
+module Enumerable
+	def palindrome?
+		puts self
+		puts self.reverse
+		
+	end
+
+end
