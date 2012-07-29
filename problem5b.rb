@@ -17,9 +17,7 @@ end
 
 module Enumerable
 	def palindrome?
-		puts self
-		puts self.reverse
-		
+		self == self.reverse
 	end
 
 end
