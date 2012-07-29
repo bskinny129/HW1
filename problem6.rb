@@ -5,7 +5,7 @@ class CartesianProduct
 		@product = Array.new
 		first.each do |first_element|
 			second.each do |second_element|
-				product.push(Array[first_element, second_element])
+				@product.push(Array[first_element, second_element])
 			end
 		end
 		@product.collect
