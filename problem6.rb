@@ -1,5 +1,4 @@
-class CartesianProduct
-	include Enumerable
+class CartesianProduct < Enumerable
 
 	def initialize(first, second)
 		product = Array.new
