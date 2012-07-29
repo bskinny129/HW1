@@ -10,13 +10,16 @@ class CartesianProduct
 		end
 #		@product.collect
 #		puts @product.collect
-	end
-	
-	def each
 		@product.each do |elt|
 			yield elt
 		end
 	end
+	
+#	def each
+#		@product.each do |elt|
+#			yield elt
+#		end
+#	end
 
 end	
 	
